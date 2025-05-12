@@ -1,16 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Amazing App!</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beautiful Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f5f7fa;
+    }
+
+    header {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .card {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
-<body bgcolor="dodgerblue">
-    <center>
-        <p style="text-align: center;
-                  padding-top: 100px;
-                  color:#fff;
-                  font-family:sans-serif;
-                  font-weight:bold;
-                  font-size: 300%;">My Amazing App!</p>
-    </center>
+<body>
+  <header>
+    <h1>Welcome to My Beautiful Page</h1>
+    <p>A clean and modern layout built with HTML & CSS</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Elegant Design</h2>
+      <p>This layout uses soft colors, card components, and subtle shadows for a neat and professional appearance.</p>
+    </div>
+
+    <div class="card">
+      <h2>Fully Responsive</h2>
+      <p>It works perfectly on desktop and mobile devices thanks to responsive design principles.</p>
+    </div>
+
+    <div class="card">
+      <h2>Easy to Customize</h2>
+      <p>You can easily tweak fonts, colors, and structure to make it your own with minimal effort.</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
 </body>
 </html>
